@@ -12,8 +12,8 @@ import Slider from '@material-ui/core/Slider';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 
-import WebCamCapture from './Components/WebCamCapture';
-import ImageFilters from './Components/ImageFilters';
+import WebCamCapture from '../components/WebCamCapture';
+import ImageFilters from '../components/ImageFilters';
 
 export default class ImageOpsContainer extends React.Component {
     
@@ -26,8 +26,6 @@ export default class ImageOpsContainer extends React.Component {
     }
 
     saveCapturedImage(data) {
-//         console.log("Image data : ", data);
-
         this.setState({ image_data: data });
     }
 

@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import { Divider, CardHeader } from '@material-ui/core';
-import {api} from '../Utils/Api';
+import {api} from '../utils/Api';
 
 export default class ImageFilters extends React.Component {
 
@@ -19,7 +19,7 @@ export default class ImageFilters extends React.Component {
                 {label: "Blur", key: "blur"},
                 {label: "Gaussian Blur", key: "gaussian_blur"},
                 {label: "Median Blur", key: "median_blur"},
-                {label: "Bilateral Filter", key: "median_filter"},
+                {label: "Bilateral Filter", key: "bilateral_filter"},
             ],
             threshold_effects: [
                 {label: "Simple Threshold", key: "simple_threshold"},
@@ -34,16 +34,23 @@ export default class ImageFilters extends React.Component {
         }
     }
 
+    componentWillReceiveProps(nextProps) {
+       this.setState({render: {}})
+    }
+
 
     applyEffect(effect) {
 
         api("apply_filter", {
             type: effect,
             data: this.props.image_data
-        }).then((data) => {
+        }).then((response) => {
+            
+            const filtered_data = response;
 
             const render = this.state.render;
-            render[effect] = data;
+            render[effect] = filtered_data.data;
+
             this.setState({render});
         });
     }
