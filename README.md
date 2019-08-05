@@ -8,3 +8,13 @@ The backend code is written in node.js using express framework and OpenCV.
 Checkout this repo - https://github.com/overflowjs-com/image_app_opencv_api_part3
 
 Do read the blog to know more - https://overflowjs.com/posts/Image-Processing-In-Reactjs-Part-1.html
+
+Available Scripts
+In the project directory, you can run:
+
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
+
+The page will reload if you make edits.
+You will also see any lint errors in the console.
