@@ -9,12 +9,14 @@ Checkout this repo - https://github.com/overflowjs-com/image_app_opencv_api_part
 
 Do read the blog to know more - https://overflowjs.com/posts/Image-Processing-Making-Custom-Filters-Reactjs-Part-2
 
-Available Scripts
+## Available Scripts
+
 In the project directory, you can run:
 
-npm start
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
+### `npm start`
 
-The page will reload if you make edits.
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
