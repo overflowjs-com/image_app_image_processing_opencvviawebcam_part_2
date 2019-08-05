@@ -7,7 +7,7 @@ We live capture the image using the webcam and apply our own self created image 
 The backend code is written in node.js using express framework and OpenCV. 
 Checkout this repo - https://github.com/overflowjs-com/image_app_opencv_api_part3
 
-Do read the blog to know more - https://overflowjs.com/posts/Image-Processing-In-Reactjs-Part-1.html
+Do read the blog to know more - https://overflowjs.com/posts/Image-Processing-Making-Custom-Filters-Reactjs-Part-2
 
 Available Scripts
 In the project directory, you can run:
